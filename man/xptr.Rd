@@ -2,6 +2,7 @@
 % Please edit documentation in R/xptr.R
 \docType{package}
 \name{xptr}
+\alias{xptr-package}
 \alias{xptr}
 \title{Manipulating External Pointer}
 \description{
@@ -23,4 +24,20 @@ xptr_address(a)
 \itemize{
 \item \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html#External-pointers-and-weak-references}
 }
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://randy3k.github.io/xptr/}
+}
+
+}
+\author{
+\strong{Maintainer}: Dirk Eddelbuettel \email{edd@debian.org} [contributor]
+
+Authors:
+\itemize{
+  \item Randy Lai
+}
+
 }

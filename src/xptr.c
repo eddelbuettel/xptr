@@ -10,9 +10,16 @@ void check_is_xptr(SEXP s) {
     }
 }
 
+void check_is_lgl(SEXP s) {
+    if (TYPEOF(s) != LGLSXP) {
+        error("expect a logical value");
+    }
+}
+
+
 void* str2ptr(SEXP p) {
     if (!isString(p)) error("expect a string of pointer address");
-    return (void*) strtol(CHAR(STRING_PTR(p)[0]), NULL, 0);
+    return (void*) strtol(CHAR(STRING_PTR_RO(p)[0]), NULL, 0);
 }
 
 SEXP new_xptr(SEXP p, SEXP tag, SEXP protected) {
@@ -28,10 +35,16 @@ SEXP is_null_xptr(SEXP s) {
     return Rf_ScalarLogical(R_ExternalPtrAddr(s) == NULL);
 }
 
-SEXP xptr_address(SEXP s) {
+SEXP xptr_address(SEXP s, SEXP f) {
     check_is_xptr(s);
-    char* buf[20];
-    sprintf((char*) buf, "%p", R_ExternalPtrAddr(s));
+    check_is_lgl(f);
+    const int n = 20;
+    char* buf[n];
+    bool fc = Rf_asLogical(f);
+    if (fc)
+        snprintf((char*) buf, n, "%p", R_ExternalPtrAddr(s));
+    else
+        snprintf((char*) buf, n, "%lld", (long long int) R_ExternalPtrAddr(s));
     return Rf_mkString((char*) buf);
 }
 
@@ -82,7 +95,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"new_xptr", (DL_FUNC) &new_xptr, 3},
     {"null_xptr", (DL_FUNC) &null_xptr, 2},
     {"is_null_xptr", (DL_FUNC) &is_null_xptr, 1},
-    {"xptr_address", (DL_FUNC) &xptr_address, 1},
+    {"xptr_address", (DL_FUNC) &xptr_address, 2},
     {"xptr_tag", (DL_FUNC) &xptr_tag, 1},
     {"xptr_protected", (DL_FUNC) &xptr_protected, 1},
     {"xptr_clear", (DL_FUNC) &xptr_clear, 1},

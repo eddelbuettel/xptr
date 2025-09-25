@@ -4,10 +4,13 @@
 \alias{xptr_address}
 \title{External pointer address.}
 \usage{
-xptr_address(s)
+xptr_address(s, pf = TRUE)
 }
 \arguments{
 \item{s}{an \code{externalptr} object}
+
+\item{pf}{a \code{logical} selecting \sQuote{pointer} format (default)
+or \sQuote{character} output}
 }
 \value{
 a string of pointer address

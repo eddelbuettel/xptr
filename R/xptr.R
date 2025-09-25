@@ -4,7 +4,6 @@
 #'
 #' @name xptr
 #' @title Manipulating External Pointer
-#' @docType package
 #' @useDynLib xptr
 #' @references \itemize{
 #' \item \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html#External-pointers-and-weak-references}
@@ -19,7 +18,7 @@
 #' is_null_xptr(a)
 #' set_xptr_address(a, xptr_address(b))
 #' xptr_address(a)
-NULL
+"_PACKAGE"
 
 #' Check if an object is an external pointer.
 #' @param s an \code{externalptr} object
@@ -55,10 +54,12 @@ is_null_xptr <- function(s) {
 
 #' External pointer address.
 #' @param s an \code{externalptr} object
+#' @param pf a \code{logical} selecting \sQuote{pointer} format (default)
+#' or \sQuote{character} output
 #' @return a string of pointer address
 #' @export
-xptr_address <- function(s) {
-    .Call("xptr_address", PACKAGE = "xptr", s)
+xptr_address <- function(s, pf = TRUE) {
+    .Call("xptr_address", PACKAGE = "xptr", s, as.logical(pf))
 }
 
 #' Tag of the external pointer.

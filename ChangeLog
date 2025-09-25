@@ -3,3 +3,9 @@
 	* DESCRIPTION (Authors@R): New Maintainer
 	* DESCRIPTION (Version, Date): New minor version and date
 
+	* src/xptr.c (xptr_address): New argument to use '%lld' instead of '%p'
+	* R/xptr.R (xptr_address): Support new argument
+	* man/xptr_address.Rd: Documentation
+
+
+
