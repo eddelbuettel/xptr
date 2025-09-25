@@ -1,0 +1,5 @@
+2025-09-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Authors@R): New Maintainer
+	* DESCRIPTION (Version, Date): New minor version and date
+
