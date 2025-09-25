@@ -7,5 +7,7 @@
 	* R/xptr.R (xptr_address): Support new argument
 	* man/xptr_address.Rd: Documentation
 
+	* .github/workflows/ci.yaml: Support continuous integration
+
 
 
