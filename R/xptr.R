@@ -4,7 +4,7 @@
 #'
 #' @name xptr
 #' @title Manipulating External Pointer
-#' @useDynLib xptr
+#' @useDynLib xptr, .registration = TRUE, .fixes = "C_"
 #' @references \itemize{
 #' \item \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html#External-pointers-and-weak-references}
 #' }
@@ -35,13 +35,13 @@ is_xptr <- function(s) {
 #' @return an \code{externalptr} object
 #' @export
 new_xptr <- function(address = "", tag = NULL, protected = NULL) {
-    .Call("new_xptr", PACKAGE = "xptr", address, tag, protected)
+    .Call(C_new_xptr, address, tag, protected)
 }
 
 #' @rdname new_xptr
 #' @export
 null_xptr <- function(tag = NULL, protected = NULL) {
-    .Call("null_xptr", PACKAGE = "xptr", tag, protected)
+    .Call(C_null_xptr, tag, protected)
 }
 
 #' Check if the external pointer is null.
@@ -49,7 +49,7 @@ null_xptr <- function(tag = NULL, protected = NULL) {
 #' @return a boolean
 #' @export
 is_null_xptr <- function(s) {
-    .Call("is_null_xptr", PACKAGE = "xptr", s)
+    .Call(C_is_null_xptr, s)
 }
 
 #' External pointer address.
@@ -59,7 +59,7 @@ is_null_xptr <- function(s) {
 #' @return a string of pointer address
 #' @export
 xptr_address <- function(s, pf = TRUE) {
-    .Call("xptr_address", PACKAGE = "xptr", s, as.logical(pf))
+    .Call(C_xptr_address, s, as.logical(pf))
 }
 
 #' Tag of the external pointer.
@@ -67,7 +67,7 @@ xptr_address <- function(s, pf = TRUE) {
 #' @return an R object
 #' @export
 xptr_tag <- function(s) {
-    .Call("xptr_tag", PACKAGE = "xptr", s)
+    .Call(C_xptr_tag, s)
 }
 
 #' Protected R object of the external pointer.
@@ -75,14 +75,14 @@ xptr_tag <- function(s) {
 #' @return an R object
 #' @export
 xptr_protected <- function(s) {
-    .Call("xptr_protected", PACKAGE = "xptr", s)
+    .Call(C_xptr_protected, s)
 }
 
 #' Clear the pointer address of the external pointer.
 #' @param s an \code{externalptr} object
 #' @export
 xptr_clear <- function(s) {
-    invisible(.Call("xptr_clear", PACKAGE = "xptr", s))
+    invisible(.Call(C_xptr_clear, s))
 }
 
 #' Set the address of the external pointer.
@@ -90,7 +90,7 @@ xptr_clear <- function(s) {
 #' @param p a string of pointer address
 #' @export
 set_xptr_address <- function(s, p) {
-    invisible(.Call("set_xptr_address", PACKAGE = "xptr", s, p))
+    invisible(.Call(C_set_xptr_address, s, p))
 }
 
 #' Set a tag to the external pointer.
@@ -98,7 +98,7 @@ set_xptr_address <- function(s, p) {
 #' @param tag an R object
 #' @export
 set_xptr_tag <- function(s, tag) {
-    invisible(.Call("set_xptr_tag", PACKAGE = "xptr", s, tag))
+    invisible(.Call(C_set_xptr_tag, s, tag))
 }
 
 #' Set a protected R object to the external pointer.
@@ -106,7 +106,7 @@ set_xptr_tag <- function(s, tag) {
 #' @param protected an R object
 #' @export
 set_xptr_protected <- function(s, protected) {
-    invisible(.Call("set_xptr_protected", PACKAGE = "xptr", s, protected))
+    invisible(.Call(C_set_xptr_protected, s, protected))
 }
 
 #' Register a finalizer for external pointer.
@@ -116,5 +116,5 @@ set_xptr_protected <- function(s, protected) {
 #' @seealso \code{\link[base]{reg.finalizer}}
 #' @export
 register_xptr_finalizer <- function(s, f, onexit = FALSE) {
-    invisible(.Call("register_xptr_finalizer", PACKAGE = "xptr", s, f, onexit))
+    invisible(.Call(C_register_xptr_finalizer, s, f, onexit))
 }
