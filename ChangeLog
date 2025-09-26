@@ -8,6 +8,9 @@
 	* README.md: Edited throughout, added badges, r-universe mention,
 	expand example to new non-pointer format character address
 
+	* DESCRIPTION: Minor polish
+	* man/xptr.Rd: Regenerated
+
 2025-09-25  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Authors@R): New Maintainer

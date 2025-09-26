@@ -3,11 +3,10 @@
 #'
 #'
 #' @name xptr
-#' @title Manipulating External Pointer
+#' @title Manipulating External Pointers
 #' @useDynLib xptr, .registration = TRUE, .fixes = "C_"
-#' @references \itemize{
-#' \item \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html#External-pointers-and-weak-references}
-#' }
+#' @references \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html#External-pointers-and-weak-references}
+#' @author Randy Lai and Dirk Eddelbuettel
 #' @examples
 #' library(xptr)
 #' a <- new_xptr("0x11a888090")
@@ -18,7 +17,8 @@
 #' is_null_xptr(a)
 #' set_xptr_address(a, xptr_address(b))
 #' xptr_address(a)
-"_PACKAGE"
+#' xptr_address(a, FALSE)
+NULL
 
 #' Check if an object is an external pointer.
 #' @param s an \code{externalptr} object
