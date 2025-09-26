@@ -5,6 +5,9 @@
 	* NAMESPACE: Regenerated
 	* src/xptr.c (R_init_xptr): Also call R_forceSymbols(dll, TRUE)
 
+	* README.md: Edited throughout, added badges, r-universe mention,
+	expand example to new non-pointer format character address
+
 2025-09-25  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Authors@R): New Maintainer
