@@ -1,5 +1,6 @@
 2025-09-26  Dirk Eddelbuettel  <edd@debian.org>
 
+
 	* R/xptr.R: Adjust roxygen2 comment to ensure '.registration = TRUE'
 	and '.fixes = "C_"' is passed to NAMESPACE; .Call() adjusted
 	* NAMESPACE: Regenerated
@@ -10,6 +11,9 @@
 
 	* DESCRIPTION: Minor polish
 	* man/xptr.Rd: Regenerated
+
+	* tests/simpleTests.R: Add set of simple tests
+	* tests/simpleTests.Rout.save: Add test reference output
 
 2025-09-25  Dirk Eddelbuettel  <edd@debian.org>
 

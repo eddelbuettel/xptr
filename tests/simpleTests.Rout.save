@@ -1,0 +1,63 @@
+
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> library(xptr)
+> 
+> a <- new_xptr("0xdeadbeef")
+> is_xptr(a)
+[1] TRUE
+> xptr_address(a)
+[1] "0xdeadbeef"
+> xptr_address(a, FALSE)
+[1] "3735928559"
+> 
+> b <- new_xptr("0x11223344")
+> is_xptr(b)
+[1] TRUE
+> xptr_address(b)
+[1] "0x11223344"
+> xptr_address(b, FALSE)
+[1] "287454020"
+> 
+> xptr_clear(b)
+> is_null_xptr(b)
+[1] TRUE
+> 
+> set_xptr_address(b, xptr_address(a))
+> xptr_address(b)
+[1] "0xdeadbeef"
+> xptr_address(b, FALSE)
+[1] "3735928559"
+> 
+> xptr_clear(a)
+> xptr_clear(b)
+> 
+> a <- new_xptr("0x11223344")
+> b <- new_xptr("0x11223344", a)
+> is_xptr(a)
+[1] TRUE
+> is_xptr(b)
+[1] TRUE
+> 
+> n <- xptr_tag(b)
+> is_xptr(n)
+[1] TRUE
+> 
+> proc.time()
+   user  system elapsed 
+  0.048   0.017   0.062 
