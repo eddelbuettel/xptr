@@ -3,22 +3,17 @@
 #include <Rdefines.h>
 #include <stdio.h>
 
-
 void check_is_xptr(SEXP s) {
-    if (TYPEOF(s) != EXTPTRSXP) {
-        error("expect an externalptr");
-    }
+    if (TYPEOF(s) != EXTPTRSXP) Rf_error("expect an externalptr");
 }
 
 void check_is_lgl(SEXP s) {
-    if (TYPEOF(s) != LGLSXP) {
-        error("expect a logical value");
-    }
+    if (!Rf_isLogical(s)) Rf_error("expect a logical value");
 }
 
 
 void* str2ptr(SEXP p) {
-    if (!isString(p)) error("expect a string of pointer address");
+    if (!isString(p)) Rf_error("expect a string of pointer address");
     return (void*) strtol(CHAR(STRING_PTR_RO(p)[0]), NULL, 0);
 }
 
@@ -40,8 +35,7 @@ SEXP xptr_address(SEXP s, SEXP f) {
     check_is_lgl(f);
     const int n = 20;
     char* buf[n];
-    bool fc = Rf_asLogical(f);
-    if (fc)
+    if (Rf_asLogical(f))
         snprintf((char*) buf, n, "%p", R_ExternalPtrAddr(s));
     else
         snprintf((char*) buf, n, "%lld", (long long int) R_ExternalPtrAddr(s));
@@ -84,8 +78,8 @@ SEXP set_xptr_protected(SEXP s, SEXP protected) {
 
 SEXP register_xptr_finalizer(SEXP s, SEXP f, SEXP onexit) {
     check_is_xptr(s);
-    if (!isFunction(f)) error("expect a function");
-    if (!isNumeric(onexit)) error("expect TRUE/FALSE");
+    if (!isFunction(f)) Rf_error("expect a function");
+    if (!isNumeric(onexit)) Rf_error("expect TRUE/FALSE");
     R_RegisterFinalizerEx(s, f, Rf_asLogical(onexit));
     return R_NilValue;
 }

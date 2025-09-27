@@ -1,3 +1,7 @@
+2025-09-27  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/xptr.c: Use explicit Rf_error, compact some expressions
+
 2025-09-26  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/xptr.R: Adjust roxygen2 comment to ensure '.registration = TRUE'
