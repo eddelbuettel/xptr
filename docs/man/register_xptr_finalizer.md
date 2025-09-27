@@ -2,6 +2,8 @@
 
 # Register a finalizer for external pointer.
 
+[**Source code**](https://github.com/eddelbuettel/xptr//tree/master/R/#L)
+
 ## Description
 
 Register a finalizer for external pointer.

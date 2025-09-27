@@ -5,6 +5,13 @@ site_name: $ALTDOC_PACKAGE_NAME
 repo_url: $ALTDOC_PACKAGE_URL_GITHUB
 repo_name: $ALTDOC_PACKAGE_NAME
 
+## Theme (already default) and override
+theme:
+  name: material
+extra_css:
+  - stylesheets/extra.css
+
+
 ### Plugins
 plugins:
   - search

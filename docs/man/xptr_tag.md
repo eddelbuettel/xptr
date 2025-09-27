@@ -2,6 +2,8 @@
 
 # Tag of the external pointer.
 
+[**Source code**](https://github.com/eddelbuettel/xptr//tree/master/R/#L)
+
 ## Description
 
 Tag of the external pointer.

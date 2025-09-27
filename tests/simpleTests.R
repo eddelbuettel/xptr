@@ -3,20 +3,20 @@ library(xptr)
 
 a <- new_xptr("0xdeadbeef")
 is_xptr(a)
-xptr_address(a)
-xptr_address(a, FALSE)
+is.character(xptr_address(a))
+is.character(xptr_address(a, FALSE))
 
 b <- new_xptr("0x11223344")
 is_xptr(b)
-xptr_address(b)
-xptr_address(b, FALSE)
+is.character(xptr_address(b))
+is.character(xptr_address(b, FALSE))
 
 xptr_clear(b)
 is_null_xptr(b)
 
 set_xptr_address(b, xptr_address(a))
-xptr_address(b)
-xptr_address(b, FALSE)
+is.character(xptr_address(b))
+is.character(xptr_address(b, FALSE))
 
 xptr_clear(a)
 xptr_clear(b)

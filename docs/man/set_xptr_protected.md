@@ -2,6 +2,8 @@
 
 # Set a protected R object to the external pointer.
 
+[**Source code**](https://github.com/eddelbuettel/xptr//tree/master/R/#L)
+
 ## Description
 
 Set a protected R object to the external pointer.

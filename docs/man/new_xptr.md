@@ -2,6 +2,8 @@
 
 # Create an external pointer object.
 
+[**Source code**](https://github.com/eddelbuettel/xptr//tree/master/R/#L)
+
 ## Description
 
 Create an external pointer object.

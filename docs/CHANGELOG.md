@@ -1,5 +1,10 @@
-2025-09-26  Dirk Eddelbuettel  <edd@debian.org>
+2025-09-27  Dirk Eddelbuettel  <edd@debian.org>
 
+	* ChangeLog: Release 1.2.0
+
+	* src/xptr.c: Use explicit Rf_error, compact some expressions
+
+2025-09-26  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/xptr.R: Adjust roxygen2 comment to ensure '.registration = TRUE'
 	and '.fixes = "C_"' is passed to NAMESPACE; .Call() adjusted
@@ -14,6 +19,9 @@
 
 	* tests/simpleTests.R: Add set of simple tests
 	* tests/simpleTests.Rout.save: Add test reference output
+
+	* docs/: Regenerated using `altdoc` and mkdocs
+	* altdoc/: Added
 
 2025-09-25  Dirk Eddelbuettel  <edd@debian.org>
 

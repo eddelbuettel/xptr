@@ -2,6 +2,8 @@
 
 # Clear the pointer address of the external pointer.
 
+[**Source code**](https://github.com/eddelbuettel/xptr//tree/master/R/#L)
+
 ## Description
 
 Clear the pointer address of the external pointer.

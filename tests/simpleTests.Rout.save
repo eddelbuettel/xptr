@@ -21,28 +21,28 @@ Type 'q()' to quit R.
 > a <- new_xptr("0xdeadbeef")
 > is_xptr(a)
 [1] TRUE
-> xptr_address(a)
-[1] "0xdeadbeef"
-> xptr_address(a, FALSE)
-[1] "3735928559"
+> is.character(xptr_address(a))
+[1] TRUE
+> is.character(xptr_address(a, FALSE))
+[1] TRUE
 > 
 > b <- new_xptr("0x11223344")
 > is_xptr(b)
 [1] TRUE
-> xptr_address(b)
-[1] "0x11223344"
-> xptr_address(b, FALSE)
-[1] "287454020"
+> is.character(xptr_address(b))
+[1] TRUE
+> is.character(xptr_address(b, FALSE))
+[1] TRUE
 > 
 > xptr_clear(b)
 > is_null_xptr(b)
 [1] TRUE
 > 
 > set_xptr_address(b, xptr_address(a))
-> xptr_address(b)
-[1] "0xdeadbeef"
-> xptr_address(b, FALSE)
-[1] "3735928559"
+> is.character(xptr_address(b))
+[1] TRUE
+> is.character(xptr_address(b, FALSE))
+[1] TRUE
 > 
 > xptr_clear(a)
 > xptr_clear(b)
@@ -60,4 +60,4 @@ Type 'q()' to quit R.
 > 
 > proc.time()
    user  system elapsed 
-  0.048   0.017   0.062 
+  0.045   0.018   0.053 

@@ -2,6 +2,8 @@
 
 # Check if an object is an external pointer.
 
+[**Source code**](https://github.com/eddelbuettel/xptr//tree/master/R/#L)
+
 ## Description
 
 Check if an object is an external pointer.

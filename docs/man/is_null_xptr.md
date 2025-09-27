@@ -2,6 +2,8 @@
 
 # Check if the external pointer is null.
 
+[**Source code**](https://github.com/eddelbuettel/xptr//tree/master/R/#L)
+
 ## Description
 
 Check if the external pointer is null.
