@@ -4,3 +4,5 @@
 ^CRAN-RELEASE$
 ^\.github
 ^\.editorconfig
+.venv_altdoc
+^altdoc$
