@@ -8,9 +8,21 @@ repo_name: $ALTDOC_PACKAGE_NAME
 ## Theme (already default) and override
 theme:
   name: material
+  custom_dir: altdoc/overrides
+  features:
+    - navigation.tabs
+    - navigation.instant
+  font:
+    text: Lato
+  favicon: Rlogo.png
+  logo: Rlogo.svg
 extra_css:
   - stylesheets/extra.css
-
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/eddelbuettel/xptr
+      name: xptr on GitHub
 
 ### Plugins
 plugins:

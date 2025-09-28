@@ -1,3 +1,8 @@
+2025-09-28  Dirk Eddelbuettel  <edd@debian.org>
+
+	* altdoc: Additional small customizations
+	* docs/: Re-rendered
+
 2025-09-27  Dirk Eddelbuettel  <edd@debian.org>
 
 	* src/xptr.c: Use explicit Rf_error, compact some expressions
