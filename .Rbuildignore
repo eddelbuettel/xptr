@@ -5,4 +5,4 @@
 ^\.github
 ^\.editorconfig
 .venv_altdoc
-^altdoc$
+^altdoc

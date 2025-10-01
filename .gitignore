@@ -6,5 +6,4 @@
 *.d
 .vscode
 /CRAN-RELEASE
-.venv_altdoc
-altdoc/freeze.rds
+.github/altdoc/freeze.rds
