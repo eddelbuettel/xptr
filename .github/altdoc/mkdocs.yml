@@ -21,8 +21,11 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/eddelbuettel/xptr
-      name: xptr on GitHub
+      link: https://github.com/eddelbuettel/
+      name: GitHub
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/eddelbuettel.com
+      name: Bsky
 
 ### Plugins
 plugins:
@@ -35,8 +38,8 @@ nav:
   - News: $ALTDOC_NEWS
   - Changelog: $ALTDOC_CHANGELOG
   - Code of Conduct: $ALTDOC_CODE_OF_CONDUCT
-  - License: $ALTDOC_LICENSE
-  - Licence: $ALTDOC_LICENCE
+#  - License: $ALTDOC_LICENSE
+#  - Licence: $ALTDOC_LICENCE
   - Citation: $ALTDOC_CITATION
 
 

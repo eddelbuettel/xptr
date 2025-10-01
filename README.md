@@ -1,4 +1,4 @@
-## xptr: Manipulating External Pointers
+# xptr: Manipulating External Pointers
 
 [![ci](https://github.com/eddelbuettel/xptr/actions/workflows/ci.yaml/badge.svg)](https://github.com/eddelbuettel/xptr/actions/workflows/ci.yaml)
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
