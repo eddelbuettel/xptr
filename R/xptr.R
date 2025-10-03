@@ -21,18 +21,18 @@
 NULL
 
 #' Check if an object is an external pointer.
-#' @param s an \code{externalptr} object
-#' @return a boolean
+#' @param s An \code{externalptr} object
+#' @return A boolean
 #' @export
 is_xptr <- function(s) {
     mode(s) == "externalptr"
 }
 
 #' Create an external pointer object.
-#' @param address a string of pointer address
-#' @param tag an optional tag
+#' @param address A string of pointer address
+#' @param tag An optional tag
 #' @param protected an objected to be protected from gc within the lifetime of the external pointer
-#' @return an \code{externalptr} object
+#' @return An \code{externalptr} object
 #' @export
 new_xptr <- function(address = "", tag = NULL, protected = NULL) {
     .Call(C_new_xptr, address, tag, protected)
@@ -45,74 +45,79 @@ null_xptr <- function(tag = NULL, protected = NULL) {
 }
 
 #' Check if the external pointer is null.
-#' @param s an \code{externalptr} object
-#' @return a boolean
+#' @param s An \code{externalptr} object
+#' @return A boolean
 #' @export
 is_null_xptr <- function(s) {
     .Call(C_is_null_xptr, s)
 }
 
 #' External pointer address.
-#' @param s an \code{externalptr} object
-#' @param pf a \code{logical} selecting \sQuote{pointer} format (default)
+#' @param s An \code{externalptr} object
+#' @param pf A \code{logical} selecting \sQuote{pointer} format (default)
 #' or \sQuote{character} output
-#' @return a string of pointer address
+#' @return A string of pointer address
 #' @export
 xptr_address <- function(s, pf = TRUE) {
     .Call(C_xptr_address, s, as.logical(pf))
 }
 
 #' Tag of the external pointer.
-#' @param s an \code{externalptr} object
-#' @return an R object
+#' @param s An \code{externalptr} object
+#' @return The R object stored in the tag slot
 #' @export
 xptr_tag <- function(s) {
     .Call(C_xptr_tag, s)
 }
 
 #' Protected R object of the external pointer.
-#' @param s an \code{externalptr} object
-#' @return an R object
+#' @param s An \code{externalptr} object
+#' @return An R object
 #' @export
 xptr_protected <- function(s) {
     .Call(C_xptr_protected, s)
 }
 
 #' Clear the pointer address of the external pointer.
-#' @param s an \code{externalptr} object
+#' @param s An \code{externalptr} object
+#' @return No return value as the function is called for its side effect
 #' @export
 xptr_clear <- function(s) {
     invisible(.Call(C_xptr_clear, s))
 }
 
 #' Set the address of the external pointer.
-#' @param s an \code{externalptr} object
-#' @param p a string of pointer address
+#' @param s An \code{externalptr} object
+#' @param p A string of pointer address
+#' @return No return value as the function is called for its side effect
 #' @export
 set_xptr_address <- function(s, p) {
     invisible(.Call(C_set_xptr_address, s, p))
 }
 
 #' Set a tag to the external pointer.
-#' @param s an \code{externalptr} object
-#' @param tag an R object
+#' @param s An \code{externalptr} object
+#' @param tag An R object
+#' @return No return value as the function is called for its side effect
 #' @export
 set_xptr_tag <- function(s, tag) {
     invisible(.Call(C_set_xptr_tag, s, tag))
 }
 
 #' Set a protected R object to the external pointer.
-#' @param s an \code{externalptr} object
-#' @param protected an R object
+#' @param s An \code{externalptr} object
+#' @param protected An R object
+#' @return No return value as the function is called for its side effect
 #' @export
 set_xptr_protected <- function(s, protected) {
     invisible(.Call(C_set_xptr_protected, s, protected))
 }
 
 #' Register a finalizer for external pointer.
-#' @param s an \code{externalptr} object
-#' @param f an R function
+#' @param s An \code{externalptr} object
+#' @param f An R function
 #' @param onexit should the finalizer execute on exit?
+#' @return No return value as the function is called for its side effect
 #' @seealso \code{\link[base]{reg.finalizer}}
 #' @export
 register_xptr_finalizer <- function(s, f, onexit = FALSE) {

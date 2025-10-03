@@ -7,10 +7,10 @@
 is_xptr(s)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 }
 \value{
-a boolean
+A boolean
 }
 \description{
 Check if an object is an external pointer.

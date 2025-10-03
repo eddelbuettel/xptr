@@ -7,10 +7,10 @@
 xptr_protected(s)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 }
 \value{
-an R object
+An R object
 }
 \description{
 Protected R object of the external pointer.

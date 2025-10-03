@@ -7,9 +7,12 @@
 set_xptr_address(s, p)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 
-\item{p}{a string of pointer address}
+\item{p}{A string of pointer address}
+}
+\value{
+No return value as the function is called for its side effect
 }
 \description{
 Set the address of the external pointer.

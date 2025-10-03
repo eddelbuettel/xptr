@@ -7,10 +7,10 @@
 xptr_tag(s)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 }
 \value{
-an R object
+The R object stored in the tag slot
 }
 \description{
 Tag of the external pointer.

@@ -10,14 +10,14 @@ new_xptr(address = "", tag = NULL, protected = NULL)
 null_xptr(tag = NULL, protected = NULL)
 }
 \arguments{
-\item{address}{a string of pointer address}
+\item{address}{A string of pointer address}
 
-\item{tag}{an optional tag}
+\item{tag}{An optional tag}
 
 \item{protected}{an objected to be protected from gc within the lifetime of the external pointer}
 }
 \value{
-an \code{externalptr} object
+An \code{externalptr} object
 }
 \description{
 Create an external pointer object.

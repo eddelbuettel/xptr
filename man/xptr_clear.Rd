@@ -7,7 +7,10 @@
 xptr_clear(s)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
+}
+\value{
+No return value as the function is called for its side effect
 }
 \description{
 Clear the pointer address of the external pointer.

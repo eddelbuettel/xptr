@@ -7,13 +7,13 @@
 xptr_address(s, pf = TRUE)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 
-\item{pf}{a \code{logical} selecting \sQuote{pointer} format (default)
+\item{pf}{A \code{logical} selecting \sQuote{pointer} format (default)
 or \sQuote{character} output}
 }
 \value{
-a string of pointer address
+A string of pointer address
 }
 \description{
 External pointer address.

@@ -7,9 +7,12 @@
 set_xptr_protected(s, protected)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 
-\item{protected}{an R object}
+\item{protected}{An R object}
+}
+\value{
+No return value as the function is called for its side effect
 }
 \description{
 Set a protected R object to the external pointer.

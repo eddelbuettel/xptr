@@ -7,9 +7,12 @@
 set_xptr_tag(s, tag)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 
-\item{tag}{an R object}
+\item{tag}{An R object}
+}
+\value{
+No return value as the function is called for its side effect
 }
 \description{
 Set a tag to the external pointer.

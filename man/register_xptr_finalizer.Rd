@@ -7,11 +7,14 @@
 register_xptr_finalizer(s, f, onexit = FALSE)
 }
 \arguments{
-\item{s}{an \code{externalptr} object}
+\item{s}{An \code{externalptr} object}
 
-\item{f}{an R function}
+\item{f}{An R function}
 
 \item{onexit}{should the finalizer execute on exit?}
+}
+\value{
+No return value as the function is called for its side effect
 }
 \description{
 Register a finalizer for external pointer.
