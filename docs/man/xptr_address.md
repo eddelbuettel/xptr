@@ -21,7 +21,7 @@ External pointer address.
 <code id="s">s</code>
 </td>
 <td>
-an <code>externalptr</code> object
+An <code>externalptr</code> object
 </td>
 </tr>
 <tr>
@@ -29,7 +29,7 @@ an <code>externalptr</code> object
 <code id="pf">pf</code>
 </td>
 <td>
-a <code>logical</code> selecting ‘pointer’ format (default) or
+A <code>logical</code> selecting ‘pointer’ format (default) or
 ‘character’ output
 </td>
 </tr>
@@ -37,4 +37,4 @@ a <code>logical</code> selecting ‘pointer’ format (default) or
 
 ## Value
 
-a string of pointer address
+A string of pointer address

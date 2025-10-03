@@ -21,7 +21,7 @@ Set a protected R object to the external pointer.
 <code id="s">s</code>
 </td>
 <td>
-an <code>externalptr</code> object
+An <code>externalptr</code> object
 </td>
 </tr>
 <tr>
@@ -29,7 +29,11 @@ an <code>externalptr</code> object
 <code id="protected">protected</code>
 </td>
 <td>
-an R object
+An R object
 </td>
 </tr>
 </table>
+
+## Value
+
+No return value as the function is called for its side effect

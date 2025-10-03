@@ -21,7 +21,7 @@ Register a finalizer for external pointer.
 <code id="s">s</code>
 </td>
 <td>
-an <code>externalptr</code> object
+An <code>externalptr</code> object
 </td>
 </tr>
 <tr>
@@ -29,7 +29,7 @@ an <code>externalptr</code> object
 <code id="f">f</code>
 </td>
 <td>
-an R function
+An R function
 </td>
 </tr>
 <tr>
@@ -41,6 +41,10 @@ should the finalizer execute on exit?
 </td>
 </tr>
 </table>
+
+## Value
+
+No return value as the function is called for its side effect
 
 ## See Also
 

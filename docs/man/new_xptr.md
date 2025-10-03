@@ -23,7 +23,7 @@ null_xptr(tag = NULL, protected = NULL)
 <code id="address">address</code>
 </td>
 <td>
-a string of pointer address
+A string of pointer address
 </td>
 </tr>
 <tr>
@@ -31,7 +31,7 @@ a string of pointer address
 <code id="tag">tag</code>
 </td>
 <td>
-an optional tag
+An optional tag
 </td>
 </tr>
 <tr>
@@ -47,4 +47,4 @@ pointer
 
 ## Value
 
-an <code>externalptr</code> object
+An <code>externalptr</code> object

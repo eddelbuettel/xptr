@@ -21,11 +21,11 @@ Check if an object is an external pointer.
 <code id="s">s</code>
 </td>
 <td>
-an <code>externalptr</code> object
+An <code>externalptr</code> object
 </td>
 </tr>
 </table>
 
 ## Value
 
-a boolean
+A boolean

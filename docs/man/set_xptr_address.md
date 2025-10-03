@@ -21,7 +21,7 @@ Set the address of the external pointer.
 <code id="s">s</code>
 </td>
 <td>
-an <code>externalptr</code> object
+An <code>externalptr</code> object
 </td>
 </tr>
 <tr>
@@ -29,7 +29,11 @@ an <code>externalptr</code> object
 <code id="p">p</code>
 </td>
 <td>
-a string of pointer address
+A string of pointer address
 </td>
 </tr>
 </table>
+
+## Value
+
+No return value as the function is called for its side effect

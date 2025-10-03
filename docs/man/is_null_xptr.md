@@ -21,11 +21,11 @@ Check if the external pointer is null.
 <code id="s">s</code>
 </td>
 <td>
-an <code>externalptr</code> object
+An <code>externalptr</code> object
 </td>
 </tr>
 </table>
 
 ## Value
 
-a boolean
+A boolean

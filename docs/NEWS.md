@@ -2,7 +2,7 @@
 
 # News for Package <span class="pkg">xptr</span>
 
-## Changes in version 1.2.0 (2025-09-27)
+## Changes in version 1.2.0 (2025-10-03)
 
 <ul>
 <li>
@@ -29,6 +29,11 @@ Simple unit tests and continunous integration have been added
 
 The package documentation site has been recreated using
 <span class="pkg">altdoc</span>
+
+</li>
+<li>
+
+All manual pages for functions now contain <code></code> sections
 
 </li>
 </ul>

@@ -1,11 +1,14 @@
+2025-10-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/xptr.R: Ensure all roxygen2 blocks have @return entries
+	* man/*: Re-rendered
+
 2025-09-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* altdoc: Additional small customizations
 	* docs/: Re-rendered
 
 2025-09-27  Dirk Eddelbuettel  <edd@debian.org>
-
-	* ChangeLog: Release 1.2.0
 
 	* src/xptr.c: Use explicit Rf_error, compact some expressions
 

@@ -21,11 +21,11 @@ Tag of the external pointer.
 <code id="s">s</code>
 </td>
 <td>
-an <code>externalptr</code> object
+An <code>externalptr</code> object
 </td>
 </tr>
 </table>
 
 ## Value
 
-an R object
+The R object stored in the tag slot
