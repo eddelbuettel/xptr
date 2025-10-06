@@ -2,6 +2,7 @@
 
 	* R/xptr.R: Ensure all roxygen2 blocks have @return entries
 	* man/*: Re-rendered
+	* docs/: Re-rendered
 
 2025-09-28  Dirk Eddelbuettel  <edd@debian.org>
 

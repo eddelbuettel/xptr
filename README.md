@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![r-universe](https://eddelbuettel.r-universe.dev/badges/xptr)](https://eddelbuettel.r-universe.dev/xptr)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/xptr)](https://github.com/eddelbuettel/xptr)
+[![Documentation](https://img.shields.io/badge/documentation-is_here-blue)](https://eddelbuettel.github.io/xptr/)
 
 ### About
 
