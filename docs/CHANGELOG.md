@@ -1,3 +1,7 @@
+2025-10-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/altdoc/pkgdown.yml: Added to aid discovery on r-universe
+
 2025-10-03  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/xptr.R: Ensure all roxygen2 blocks have @return entries

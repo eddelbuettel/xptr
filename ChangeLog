@@ -4,6 +4,8 @@
 
 2025-10-03  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Release 1.2.0
+
 	* R/xptr.R: Ensure all roxygen2 blocks have @return entries
 	* man/*: Re-rendered
 	* docs/: Re-rendered
