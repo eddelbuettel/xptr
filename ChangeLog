@@ -1,3 +1,7 @@
+2025-10-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Update installation for renewed CRAN status, add badges
+
 2025-10-06  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/altdoc/pkgdown.yml: Added to aid discovery on r-universe

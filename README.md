@@ -2,6 +2,8 @@
 
 [![ci](https://github.com/eddelbuettel/xptr/actions/workflows/ci.yaml/badge.svg)](https://github.com/eddelbuettel/xptr/actions/workflows/ci.yaml)
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
+[![CRAN](https://www.r-pkg.org/badges/version/xptr)](https://cran.r-project.org/package=xptr)
+[![Dependencies](https://tinyverse.netlify.app/badge/xptr)](https://cran.r-project.org/package=xptr)
 [![r-universe](https://eddelbuettel.r-universe.dev/badges/xptr)](https://eddelbuettel.r-universe.dev/xptr)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/xptr)](https://github.com/eddelbuettel/xptr)
 [![Documentation](https://img.shields.io/badge/documentation-is_here-blue)](https://eddelbuettel.github.io/xptr/)
@@ -37,8 +39,11 @@ xptr_address(a)           # default 'pointer' variant
 
 ### Installation
 
-The package is not currently on CRAN.
+The package is on CRAN and can be installed via
 
+```r
+> install.packages("xptr")
+```
 
 The [r-univere page][r-univere page] has source and binary builds from the repository version which
 may differ from the CRAN version and shows how to install them. Lastly, one can always rely on
