@@ -1,8 +1,14 @@
+2025-10-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Update installation for renewed CRAN status, add badges
+
 2025-10-06  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/altdoc/pkgdown.yml: Added to aid discovery on r-universe
 
 2025-10-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 1.2.0
 
 	* R/xptr.R: Ensure all roxygen2 blocks have @return entries
 	* man/*: Re-rendered
