@@ -1,3 +1,8 @@
+2025-10-10  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/CITATION: Added as in-container use of citation() with
+	defaults appears to drop both doi and url entries
+
 2025-10-09  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Update installation for renewed CRAN status, add badges
